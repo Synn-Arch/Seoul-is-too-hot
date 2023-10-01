@@ -40,7 +40,11 @@
   	<div class="map-overlay top">
   	<div class="map-overlay-inner">
   	<h2>Public and Affordable Housing Flood Risk</h2>
-    <!-- INSERT TEXT HERE -->
+    This map represents areas that were flooded due to Hurricane Sandy (in blue)<br>
+    and the locations of housing developed by NYCHA (in red).<br><br>
+    
+    In most areas, NYCHA housing was not flooded,<br>
+    but flooded housing can be observed in East Harlem and the eastern part of Lower Manhattan.
 
   	</div>
   	</div>
@@ -51,7 +55,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3lubnBvd2VyIiwiYSI6ImNsbHBtOWE1MjA2bDYzaW5yY
 
 const map = new mapboxgl.Map({
   container: 'map', // container id
-  style: 'mapbox://styles/synnpower/cln6jycdo073501nseyqte9gt' // replace this with your style URL,
+  style: 'mapbox://styles/synnpower/cln6qmh8j076f01qb2fmr1vdx' // replace this with your style URL,
   ,center: [-73.935242, 40.730610], // The convention for coordinates is  typically [long, lat]
   minZoom: 12 // The zoom level can be any decimal number
 });
@@ -62,6 +66,10 @@ map.on('load',function(){
     'type':'vector',
     'url': 'mapbox://synnpower.4no0v8gp'
   });
+  map.addSource('housing_layer',{
+    'type':'vector',
+    'url': 'mapbox://synnpower.2z8rm7so'
+  });
   // add a new layer with your polygons
   map.addLayer({
     'id':'flood_zones',
@@ -69,7 +77,17 @@ map.on('load',function(){
     'source':'sandy_layer',
     'source-layer':'Sandy_Inundation_Zone-4wzrkh',
     'paint':{
-      'fill-color':'#00158f',
+      'fill-color':'#31d8ff',
+      'fill-opacity': 0.5
+    }
+  })
+  map.addLayer({
+    'id':'housing_properties',
+    'type':'fill',
+    'source':'housing_layer',
+    'source-layer':'Map_of_NYCHA_Developments-093syz',
+    'paint':{
+      'fill-color':'#d31a1a',
       'fill-opacity': 0.5
     }
   })
