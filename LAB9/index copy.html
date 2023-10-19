@@ -106,10 +106,7 @@
               <input id='f80_500' type='checkbox' name='viz-toggle' checked='checked'>
           </label>
 
-        <!-- <label class='check-container'>
-            NYCHA Buildings
-            <input id='nychaBuildings' type='checkbox' name='viz-toggle' checked='checked'>
-        </label> -->
+          
 
       </div>
 
@@ -117,17 +114,50 @@
 
 
 	</div>
+
+  <div class='flybutton-overlay'>
+    <div class='flybutton-inner'>
+      <h3>Let's Fly!</h3>
+    </div>
+  </div>
+
   <script>
   // You'll be inserting your JS code to initialize your map here
   mapboxgl.accessToken = 'pk.eyJ1Ijoic3lubnBvd2VyIiwiYSI6ImNsbHBtOWE1MjA2bDYzaW5yY2tzeWZ6cW0ifQ.kteK0IjXELUFn9HM9qnmHQ';
   const map = new mapboxgl.Map({
     container: 'map', // container id
     style: 'mapbox://styles/synnpower/cln6qmh8j076f01qb2fmr1vdx', // replace this with your style URL
-    center: [-73.935242, 40.730610], // The convention for coordinates is  typically [long, lat]
-    zoom: 13,
-    // maxZoom: 22,
-    minZoom: 12
+    center: [-74.00754303051782, 40.71318357435477], // The convention for coordinates is  typically [long, lat]
+    // camera options properties - https://docs.mapbox.com/help/glossary/camera/
+    pitch: 60, // pitch in degrees
+    bearing: 40, // bearing in degrees
+    zoom: 14,
   });
+  var button = document.querySelector(".flybutton-overlay");
+
+  var clickCount = 0;
+
+  button.addEventListener("click", function() {
+  clickCount++;
+
+  if (clickCount % 2 === 1) {
+    alert("Let's Fly! LMAO!!!");
+    map.flyTo({
+      center: [-73.9260786830465, 40.855876980942966],
+      pitch: 40,
+      bearing: 80,
+    });
+  } else {
+    alert("Back to Origin!");
+    map.flyTo({
+      center: [-74.00754303051782, 40.71318357435477],
+      pitch: 60,
+      bearing: 40,
+    });
+  }
+});
+
+
 
     map.on('load',function(){
       // Give your layer's source a nickname you'll remember easily.
@@ -358,10 +388,6 @@
                 
 
 
-        /// THERE ARE THREE MORE VARIABLES MISSING!
-        /// FILL IN THE REST
-
-
         var description = '<h4> ' +Address+'<br>'+
                       'BBL: '+BBL+'<br>'+
                       'City Council District: '+Council+ '</h4>'+
@@ -380,6 +406,9 @@
     });
 
   });
+
+
+
 
     // Within a script, you comment using two backslashes.
     </script>

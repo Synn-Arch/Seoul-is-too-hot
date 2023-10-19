@@ -51,3 +51,33 @@ font: 12px/20px 'Montserrat Neue',sans-serif;
   height: 10px;
   margin-right: 5px;
 }
+
+.flybutton-overlay {
+  font-family: 'Montserrat', sans-serif;
+  /*font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;*/
+  position: fixed;
+  width: 90px;
+  border-radius: 3px;
+  background-color: #fff;
+  height: 40px;
+  top: 0;
+  left: 20.5%;
+  margin: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+
+
+.flybutton-inner {
+  padding: 5px;
+
+  }
+    
+.flybutton-h2 {
+  line-height: 24px;
+  display: block;
+  margin: 0 0 10px;
+  }
+  
