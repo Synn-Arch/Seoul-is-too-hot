@@ -134,14 +134,13 @@
     zoom: 14,
   });
   var button = document.querySelector(".flybutton-overlay");
-
   var clickCount = 0;
 
   button.addEventListener("click", function() {
   clickCount++;
 
   if (clickCount % 2 === 1) {
-    alert("Let's Fly! LMAO!!!");
+    alert("Let's Fly!");
     map.flyTo({
       center: [-73.9260786830465, 40.855876980942966],
       pitch: 40,
