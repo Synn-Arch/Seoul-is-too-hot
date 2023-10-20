@@ -141,6 +141,7 @@
 
   if (clickCount % 2 === 1) {
     alert("Let's Fly!");
+    button.querySelector("h3").textContent = "Back to Origin!"
     map.flyTo({
       center: [-73.9260786830465, 40.855876980942966],
       pitch: 40,
@@ -148,6 +149,7 @@
     });
   } else {
     alert("Back to Origin!");
+    button.querySelector("h3").textContent = "Let's Fly!"
     map.flyTo({
       center: [-74.00754303051782, 40.71318357435477],
       pitch: 60,
@@ -349,7 +351,7 @@
 
       function switchLayer(layer) {
       var clickedLayersLabel = layer.target.id; // get the label of the layer cluster
-      var clickedLayers = eval(clickedLayersLabel); // create the variable from the label using the eval function (사용되지 않았음, eval함수는 주어진 문자열을 JavaScript코드로 해석하고 실행)
+      //var clickedLayers = eval(clickedLayersLabel); // create the variable from the label using the eval function (사용되지 않았음, eval함수는 주어진 문자열을 JavaScript코드로 해석하고 실행)
       var visibility = map.getLayoutProperty(clickedLayersLabel, "visibility"); // check whether the cluster of layers is visible by checking the first entry
      
       if (visibility === "visible") {
