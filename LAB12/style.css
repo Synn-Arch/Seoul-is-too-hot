@@ -38,7 +38,7 @@ a, a:hover, a:visited {
     width: 100%;
     position: relative;
     z-index: 5;
-    background-image: url(https://raw.githubusercontent.com/synnpower/countermapping2/main/LAB12/Images/sandy1.png);
+    background-image: url(https://github.com/synnpower/countermapping2/blob/main/LAB12/Images/sandy1.png?raw=true);
     background-position: top;
     background-repeat: no-repeat;
     background-size: 100vw 100vh;
