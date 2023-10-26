@@ -46,7 +46,7 @@ var config = {
                 // }
             ]
         },
-        {
+        { 
             id: 'second-chapter',
             alignment: 'right',
             hidden: false,
