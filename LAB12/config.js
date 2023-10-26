@@ -21,7 +21,7 @@ var config = {
             alignment: 'left',
             hidden: false,
             title: 'Display Title',
-            image: './images/nyc2.jpg',
+            image: 'https://raw.githubusercontent.com/synnpower/countermapping2/main/LAB12/Images/nyc2.jpg',
             description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
             location: {
                 center: [-122.418398, 37.759483],
@@ -51,7 +51,7 @@ var config = {
             alignment: 'right',
             hidden: false,
             title: 'Second Title',
-            image: './images/nyc3.jpg',
+            image: 'https://raw.githubusercontent.com/synnpower/countermapping2/main/LAB12/Images/nyc3.jpg',
             description: 'Copy these sections to add to your story.',
             location: {
                 center: [-77.020636, 38.886900],
@@ -76,7 +76,7 @@ var config = {
             alignment: 'center',
             hidden: false,
             description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ultricies tempor purus, eget tempus sem bibendum vel. Maecenas at justo non felis accumsan condimentum vitae et leo. Sed sodales nec risus maximus congue. Ut quis tincidunt leo. Pellentesque sapien nisl, congue tempus mauris in, pulvinar mattis turpis. Nullam sit amet justo egestas, laoreet mauris ut, pulvinar ipsum. Pellentesque vehicula imperdiet iaculis. Nam in tellus metus. Donec a est non orci efficitur ornare id mattis eros. Aliquam vel facilisis ligula. Nullam tincidunt, sapien vitae bibendum consequat, nibh eros eleifend ligula, et aliquam enim justo eget felis. Sed nec vehicula metus. Pellentesque rutrum dui quis egestas hendrerit. Nullam auctor et tortor sit amet congue.',
-            video: './images/video.mp4',
+            video: 'https://raw.githubusercontent.com/synnpower/countermapping2/main/LAB12/Images/video.mp4',
             location: {
               center: [-73.97615, 40.71901],
               zoom: 14.84,
@@ -89,7 +89,7 @@ var config = {
             alignment: 'left',
             hidden: false,
             title: 'Third Title',
-            image: './images/nyc4.jpg',
+            image: 'https://github.com/synnpower/countermapping2/blob/main/LAB12/Images/nyc4.jpg?raw=true',
             description: 'Copy these sections to add to your story.',
             location: {
               center: [-73.97615, 40.71901],
