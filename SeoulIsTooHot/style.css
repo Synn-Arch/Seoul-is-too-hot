@@ -1,14 +1,19 @@
 @font-face {
     font-family: "KOPUBBATANGMEDIUM";
     src: url("font/KOPUBBATANGMEDIUM.TTF") format("truetype");
-    font-weight: normal;
+    font-weight: lighter;
+}
+@font-face {
+    font-family: "KOPUBBATANGLIGHT";
+    src: url("font/KOPUBBATANGLIGHT.TTF") format("truetype");
+    font-weight: lighter;
 }
 
 
 body {
     margin:0;
     padding:0;
-    font-family: 'Libre Baskerville', serif;
+    font-family: 'KOPUBBATANGMEDIUM', serif;
     font-weight: lighter
     
 }
@@ -47,7 +52,7 @@ a, a:hover, a:visited {
     position: relative;
     z-index: 5;
     height: 170vh;
-    background: linear-gradient(to bottom, rgba(255, 0, 0, 0.5), rgba(255, 0, 0, 0)) no-repeat;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 0, 0, 0)) no-repeat;
     background-size: 100% 50%;
 }
 #header h1 {
@@ -92,9 +97,22 @@ a, a:hover, a:visited {
 
 }
 
-#header p{
+#header h4{
     margin: 0;
+    font-family: 'KOPUBBATANGLIGHT', serif;
+    font-size: 2vh;
     padding: 2vh 2vw;
+    padding-top: 65vh;
+    text-align: center;
+    margin-left: 34vw;
+    margin-right: 34vw;
+    color: black    
+}
+
+#header h6{
+    margin: 0;
+    font-size: 1.3vh;
+    padding: 2vh 5vw;
     text-align: center;
     margin-left: 34vw;
     margin-right: 34vw;

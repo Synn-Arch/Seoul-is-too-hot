@@ -79,19 +79,19 @@ if (config.author) {
 
 
 if (config.byline) {
-    var bylineText = document.createElement('p');
+    var bylineText = document.createElement('h4');
     bylineText.innerText = config.byline;
     header.appendChild(bylineText);
 }
 
 if (config.para1) {
-    var bylineText = document.createElement('p');
+    var bylineText = document.createElement('h6');
     bylineText.innerText = config.para1;
     header.appendChild(bylineText)
 }
 
 if (config.para2) {
-    var bylineText = document.createElement('p');
+    var bylineText = document.createElement('h6');
     bylineText.innerText = config.para2;
     header.appendChild(bylineText)
 }

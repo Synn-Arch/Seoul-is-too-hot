@@ -23,14 +23,14 @@ var config = {
             image: 'https://raw.githubusercontent.com/synnpower/countermapping2/main/LAB12/Images/nyc2.jpg',
             description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
             location: {
-                center: [126.98611, 37.55978],
-                zoom: 10.68,
+                center: [126.98376, 37.58835],
+                zoom: 10.36,
                 pitch: 0,
                 bearing: 0
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
-            callback: '',
+            callback: 'myCallbackFunction',
             onChapterEnter: [
                 // {
                 //     layer: 'layer-name',
