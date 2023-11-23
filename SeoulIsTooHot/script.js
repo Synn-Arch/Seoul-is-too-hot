@@ -291,7 +291,14 @@ map.on("load", function() {
             chapter.onChapterExit.forEach(setLayerOpacity);
         }
     });
+    
 });
+
+
+
+
+
+
 
 //Helper functions for insetmap
 function getInsetBounds() {

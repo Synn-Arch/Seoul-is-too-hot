@@ -111,12 +111,13 @@ a, a:hover, a:visited {
 
 #header h6{
     margin: 0;
+    font-family: 'KOPUBBATANGMEDIUM', serif;
     font-size: 1.3vh;
     padding: 2vh 5vw;
     text-align: center;
     margin-left: 34vw;
     margin-right: 34vw;
-    color: black    
+    color: rgb(0, 0, 0)    
 }
 
 #footer {

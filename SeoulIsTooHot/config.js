@@ -30,7 +30,7 @@ var config = {
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
-            callback: 'myCallbackFunction',
+            callback:"",
             onChapterEnter: [
                 // {
                 //     layer: 'layer-name',
@@ -43,20 +43,20 @@ var config = {
                 //     layer: 'layer-name',
                 //     opacity: 0
                 // }
-            ]
+            ],     
         },
         { 
             id: 'second-chapter',
-            alignment: 'right',
+            alignment: 'left',
             hidden: false,
             title: 'Second Title',
             image: 'https://raw.githubusercontent.com/synnpower/countermapping2/main/LAB12/Images/nyc3.jpg',
             description: 'Copy these sections to add to your story.',
             location: {
-                center: [-77.020636, 38.886900],
-                zoom: 8.5,
-                pitch: 60,
-                bearing: -43.2,
+                center: [126.82846, 37.55935],
+                zoom: 10.70,
+                pitch: 0,
+                bearing: 0,
                 // flyTo additional controls-
                 // These options control the flight curve, making it move
                 // slowly and zoom out almost completely before starting
@@ -65,7 +65,7 @@ var config = {
                 //curve: 1, // change the speed at which it zooms out
             },
             mapAnimation: 'flyTo',
-            rotateAnimation: true,
+            rotateAnimation: false,
             callback: '',
             onChapterEnter: [],
             onChapterExit: []
