@@ -16,26 +16,12 @@ var config = {
     footer: 'Source: source citations, etc. <br> Created using <a href="https://github.com/mapbox/storytelling" target="_blank">Mapbox Storytelling</a> template.',
     chapters: [
         {
-            id: 'interlude',
+            id: 'first-chapter',
             alignment: 'center',
             hidden: false,
-            description: '서울은 너무 덥다.',
             title: '서울은 진짜 너무 덥다.',
-            video: 'https://raw.githubusercontent.com/synnpower/countermapping2/main/LAB12/Images/video.mp4',
-            location: {
-                center: [126.98376, 37.58835],
-                zoom: 10.36,
-                pitch: 0,
-                bearing: 0
-            },
-        },
-        {
-            id: 'first-chapter',
-            alignment: 'left',
-            hidden: false,
-            title: 'Display Title',
-            image: 'https://raw.githubusercontent.com/synnpower/countermapping2/main/LAB12/Images/nyc2.jpg',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+            image: 'https://github.com/synnpower/countermapping2/blob/main/SeoulIsTooHot/images/seoulheat.jpg?raw=true',
+            description: '서울은 너무너무더워요. 이게 바나나가 자라는 나라지 어디 사람이 사는 동네냐?',
             location: {
                 center: [126.98376, 37.58835],
                 zoom: 10.36,
@@ -46,10 +32,67 @@ var config = {
             rotateAnimation: false,
             callback:"",
             onChapterEnter: [
+                { layer: 'capacity', opacity: 0 },  
+                { layer: 'status', opacity: 0 },   
+                { layer: 'walking', opacity: 0 },  
+            ],
+            onChapterExit: [
+                { layer: 'capacity', opacity: 0 },  
+                { layer: 'status', opacity: 0 },   
+                { layer: 'walking', opacity: 0 },  
+            ],     
+        },
+        {
+            id: 'second-chapter',
+            alignment: 'left',
+            hidden: false,
+            title: '그래서 서울엔 쿨링센터가 참 많아요',
+            image: 'https://github.com/synnpower/countermapping2/blob/main/SeoulIsTooHot/images/seoulheat.jpg?raw=true',
+            description: '되게 많쥬?',
+            location: {
+                center: [126.822376, 37.55835],
+                zoom: 10.7,
+                pitch: 0,
+                bearing: 0
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback:"",
+            onChapterEnter: [
+                {
+                layer: 'status',
+                opacity: 1,
+                duration: 0
+                }
+            ],
+            onChapterExit: [
+                {
+                layer: 'status',
+                opacity: 0
+                }
+            ],     
+        },
+        {
+            id: '3rd-chapter',
+            alignment: 'left',
+            hidden: false,
+            title: '수용률은 이래요',
+            image: 'https://github.com/synnpower/countermapping2/blob/main/SeoulIsTooHot/images/seoulheat.jpg?raw=true',
+            description: '좀 열악한 곳이 보이쥬?',
+            location: {
+                center: [126.822376, 37.55835],
+                zoom: 10.7,
+                pitch: 0,
+                bearing: 0
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback:"",
+            onChapterEnter: [
                 {
                 layer: 'capacity',
                 opacity: 1,
-                duration: 5000
+                duration: 0
                 }
             ],
             onChapterExit: [
@@ -60,29 +103,34 @@ var config = {
             ],     
         },
         { 
-            id: 'second-chapter',
+            id: 'forth-chapter',
             alignment: 'left',
             hidden: false,
             title: 'Second Title',
             image: 'https://raw.githubusercontent.com/synnpower/countermapping2/main/LAB12/Images/nyc3.jpg',
             description: 'Copy these sections to add to your story.',
             location: {
-                center: [126.82846, 37.55935],
-                zoom: 10.70,
+                center: [126.91267, 37.60734],
+                zoom: 16.66,
                 pitch: 0,
-                bearing: 0,
-                // flyTo additional controls-
-                // These options control the flight curve, making it move
-                // slowly and zoom out almost completely before starting
-                // to pan.
-                //speed: 2, // make the flying slow
-                //curve: 1, // change the speed at which it zooms out
+                bearing: 0
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
             callback: '',
-            onChapterEnter: [],
-            onChapterExit: []
+            onChapterEnter: [
+                {
+                layer: 'walking',
+                opacity: 1,
+                duration: 5000
+                }
+            ],
+            onChapterExit: [
+                {
+                layer: 'walking',
+                opacity: 0
+                }
+            ],    
         },
         {
             id: 'interlude',
@@ -91,10 +139,10 @@ var config = {
             description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ultricies tempor purus, eget tempus sem bibendum vel. Maecenas at justo non felis accumsan condimentum vitae et leo. Sed sodales nec risus maximus congue. Ut quis tincidunt leo. Pellentesque sapien nisl, congue tempus mauris in, pulvinar mattis turpis. Nullam sit amet justo egestas, laoreet mauris ut, pulvinar ipsum. Pellentesque vehicula imperdiet iaculis. Nam in tellus metus. Donec a est non orci efficitur ornare id mattis eros. Aliquam vel facilisis ligula. Nullam tincidunt, sapien vitae bibendum consequat, nibh eros eleifend ligula, et aliquam enim justo eget felis. Sed nec vehicula metus. Pellentesque rutrum dui quis egestas hendrerit. Nullam auctor et tortor sit amet congue.',
             video: 'https://raw.githubusercontent.com/synnpower/countermapping2/main/LAB12/Images/video.mp4',
             location: {
-              center: [-73.97615, 40.71901],
-              zoom: 14.84,
-              pitch: 48,
-              bearing: 142.44,
+                center: [126.91267, 37.60734],
+                zoom: 16.66,
+                pitch: 0,
+                bearing: 0
             },
         },
         {
@@ -105,10 +153,10 @@ var config = {
             image: 'https://github.com/synnpower/countermapping2/blob/main/LAB12/Images/nyc4.jpg?raw=true',
             description: 'Copy these sections to add to your story.',
             location: {
-              center: [-73.97615, 40.71901],
-              zoom: 15.84,
-              pitch: 56,
-              bearing: 260.44,
+                center: [126.822376, 37.55835],
+                zoom: 10.7,
+                pitch: 0,
+                bearing: 0,
               speed: .5, // make the flying slow
               curve: 1, // change the speed at which it zooms out
             },

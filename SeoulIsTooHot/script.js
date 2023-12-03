@@ -118,6 +118,13 @@ config.chapters.forEach((record, idx) => {
         chapter.appendChild(image);
     }
 
+    if (record.imageinterude) {
+        var imageinterude = new Image();
+        image.src = record.imageinterude;
+        chapter.appendChild(imageinterude);
+    }
+
+
     if (record.description) {
         var story = document.createElement('p');
         story.innerHTML = record.description;
