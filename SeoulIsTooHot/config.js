@@ -16,6 +16,20 @@ var config = {
     footer: 'Source: source citations, etc. <br> Created using <a href="https://github.com/mapbox/storytelling" target="_blank">Mapbox Storytelling</a> template.',
     chapters: [
         {
+            id: 'interlude',
+            alignment: 'center',
+            hidden: false,
+            description: '서울은 너무 덥다.',
+            title: '서울은 진짜 너무 덥다.',
+            video: 'https://raw.githubusercontent.com/synnpower/countermapping2/main/LAB12/Images/video.mp4',
+            location: {
+                center: [126.98376, 37.58835],
+                zoom: 10.36,
+                pitch: 0,
+                bearing: 0
+            },
+        },
+        {
             id: 'first-chapter',
             alignment: 'left',
             hidden: false,
@@ -32,17 +46,17 @@ var config = {
             rotateAnimation: false,
             callback:"",
             onChapterEnter: [
-                // {
-                //     layer: 'layer-name',
-                //     opacity: 1,
-                //     duration: 5000
-                // }
+                {
+                layer: 'capacity',
+                opacity: 1,
+                duration: 5000
+                }
             ],
             onChapterExit: [
-                // {
-                //     layer: 'layer-name',
-                //     opacity: 0
-                // }
+                {
+                layer: 'capacity',
+                opacity: 0
+                }
             ],     
         },
         { 
