@@ -231,6 +231,27 @@ map.on('load',function(){
         }
     });
 
+    map.addLayer({
+        'id':'seoul-fill1',
+        'type':'fill',
+        'source':'analysis',
+        'source-layer':'analysis-coolingcenter',
+        'paint':{
+            'fill-color': '#ad0000',
+        }
+    });
+
+    map.addLayer({
+        'id':'seoul-fill2',
+        'type':'fill',
+        'source':'analysis',
+        'source-layer':'analysis-coolingcenter',
+        'paint':{
+            'fill-color': '#5595c2',
+        }
+    });
+    
+
 
 
 });
