@@ -96,9 +96,9 @@ map.on('load',function(){
                             ['to-number', ['get', 'analysis_SleepCapaRateFix']],
                             'white',
                             0,'#290000',
-                            0.2, '#f0adad',
-                            0.4, '#872727', 
-                            0.8, '#c76565',
+                            0.2, '#872727',
+                            0.4, '#c76565', 
+                            0.8, '#f0adad',
                             1, '#f7eded',
                         ],
             'fill-opacity': 0.3,
@@ -112,7 +112,7 @@ map.on('load',function(){
         'source':'centerstatus',
         'source-layer':'cooling-centers',
         'paint': {
-            'circle-radius': 4,
+            'circle-radius': 3,
             'circle-color': [
                 'match',
                 ['get', 'Fac_Type'],
