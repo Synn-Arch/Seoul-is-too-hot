@@ -73,14 +73,14 @@ map.on('load',function(){
             'fill-color': ['step',
                             ['to-number', ['get', 'analysis_AcRate']],
                             'white',
-                            8, '#f7eded',
-                            15, '#f0adad', 
-                            23, '#c76565',
-                            33, '#872727',
-                            46, '#661414',  
-                            64, '#f0adad',
-                            100, '#420505', 
-                            190, '#290000', 
+                            8, '#ebfbff',
+                            15, '#cce9f0', 
+                            23, '#a3c8d1',
+                            33, '#88b2bd',
+                            46, '#6c98a3',  
+                            64, '#578691',
+                            100, '#396670', 
+                            190, '#18363d', 
                         ],
             'fill-opacity': 0.3,
         }
@@ -116,12 +116,13 @@ map.on('load',function(){
             'circle-color': [
                 'match',
                 ['get', 'Fac_Type'],
-                1, '#440154',
-                2, '#3b528b',
-                3, '#21908d',
-                4, '#5dc963',
-                5, '#5dc963',
-                '#ccc'
+                1, '#006ebd', //senior community center
+                2, '#008f2b', //welfare center
+                4, '#a6a000', //Public Health center                
+                5, '#cc6900', //Community Service center
+                7, '#8c009e', //Religious Facility
+                8, '#03005c', //Bank
+                '#5c5c5c'
             ]
         }
     });
@@ -152,7 +153,7 @@ map.on('load',function(){
             'line-color': '#000000',
             'line-width': [
                 'interpolate', ['linear'], ['zoom'],
-                10, 1,
+                10, 0.2,
                 16, 1
                 ],
         }

@@ -30,7 +30,10 @@ var config = {
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
-            callback:"",
+            callback:() => {
+                document.getElementById("capacity_legend").style.visibility = "hidden";
+                document.getElementById("ac_legend").style.visibility = "hidden";
+            },
             onChapterEnter: [
                 {layer: 'capacity', opacity: 0},
                 {layer: 'status', opacity: 0},
@@ -63,7 +66,7 @@ var config = {
             alignment: 'center',
             hidden: false,
             title: '쿨링센터란 무엇일까요?',
-            image: 'https://github.com/synnpower/countermapping2/blob/main/SeoulIsTooHot/images/seoulheat.jpg?raw=true',
+            image: 'https://github.com/synnpower/countermapping2/blob/main/SeoulIsTooHot/images/coolingCenter.jpg?raw=true',
             description: '더워 죽겠는 사람들이 피하는 곳이죠!',
             location: {
                 center: [126.98376, 37.55835],
@@ -73,7 +76,10 @@ var config = {
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
-            callback:"",
+            callback:() => {
+                document.getElementById("capacity_legend").style.visibility = "hidden";
+                document.getElementById("ac_legend").style.visibility = "hidden";
+            },
             onChapterEnter: [
                 {layer: 'capacity', opacity: 0},
                 {layer: 'status', opacity: 0},
@@ -106,7 +112,7 @@ var config = {
             alignment: 'left',
             hidden: false,
             title: '그래서 서울엔 쿨링센터가 참 많아요',
-            image: 'https://github.com/synnpower/countermapping2/blob/main/SeoulIsTooHot/images/seoulheat.jpg?raw=true',
+            image: 'https://github.com/synnpower/countermapping2/blob/main/SeoulIsTooHot/images/coolingCenter2.jpg?raw=true',
             description: '되게 많쥬?',
             location: {
                 center: [126.822376, 37.55835],
@@ -116,7 +122,10 @@ var config = {
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
-            callback:"",
+            callback:() => {
+                document.getElementById("capacity_legend").style.visibility = "hidden";
+                document.getElementById("ac_legend").style.visibility = "hidden";
+            },
             onChapterEnter: [
                 {layer: 'capacity', opacity: 0},
                 {layer: 'status', opacity: 1},
@@ -132,9 +141,9 @@ var config = {
             ],
             onChapterExit: [
                 {layer: 'capacity', opacity: 1},
-                {layer: 'status', opacity: 1},
+                {layer: 'status', opacity: 0},
                 {layer: 'walking', opacity: 0},
-                {layer: 'dongline', opacity: 0},
+                {layer: 'dongline', opacity: 1},
                 {layer: 'seoul', opacity: 1},
                 {layer: 'newcenter', opacity: 0},
                 {layer: 'topfive', opacity: 0},
@@ -149,7 +158,7 @@ var config = {
             alignment: 'left',
             hidden: false,
             title: '수용률은 이래요',
-            image: 'https://github.com/synnpower/countermapping2/blob/main/SeoulIsTooHot/images/seoulheat.jpg?raw=true',
+            image: 'https://github.com/synnpower/countermapping2/blob/main/SeoulIsTooHot/images/coolingCenter2.jpg?raw=true',
             description: '좀 열악한 곳이 보이쥬?',
             location: {
                 center: [126.822376, 37.55835],
@@ -159,7 +168,10 @@ var config = {
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
-            callback:"",
+            callback:() => {
+                document.getElementById("capacity_legend").style.visibility = "visible";
+                document.getElementById("ac_legend").style.visibility = "hidden";
+            },
             onChapterEnter: [
                 {layer: 'capacity', opacity: 1},
                 {layer: 'status', opacity: 0},
@@ -174,7 +186,7 @@ var config = {
                 {layer: 'topfiveline', opacity: 0},
             ],
             onChapterExit: [
-                {layer: 'capacity', opacity: 1},
+                {layer: 'capacity', opacity: 0},
                 {layer: 'status', opacity: 0},
                 {layer: 'walking', opacity: 0},
                 {layer: 'dongline', opacity: 1},
@@ -182,7 +194,7 @@ var config = {
                 {layer: 'newcenter', opacity: 0},
                 {layer: 'topfive', opacity: 0},
                 {layer: 'newwalking', opacity: 0},
-                {layer: 'acrate', opacity: 0},
+                {layer: 'acrate', opacity: 1},
                 {layer: 'accomorate', opacity: 0},  
                 {layer: 'topfiveline', opacity: 0},
             ],     
@@ -202,7 +214,10 @@ var config = {
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
-            callback:"",
+            callback:() => {
+                document.getElementById("capacity_legend").style.visibility = "hidden";
+                document.getElementById("ac_legend").style.visibility = "visible";
+            },
             onChapterEnter: [
                 {layer: 'capacity', opacity: 0},
                 {layer: 'status', opacity: 0},
@@ -225,7 +240,7 @@ var config = {
                 {layer: 'newcenter', opacity: 0},
                 {layer: 'topfive', opacity: 0},
                 {layer: 'newwalking', opacity: 0},
-                {layer: 'acrate', opacity: 1},
+                {layer: 'acrate', opacity: 0},
                 {layer: 'accomorate', opacity: 1},  
                 {layer: 'topfiveline', opacity: 0},
             ],     
@@ -245,7 +260,10 @@ var config = {
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
-            callback:"",
+            callback:() => {
+                document.getElementById("capacity_legend").style.visibility = "hidden";
+                document.getElementById("ac_legend").style.visibility = "hidden";
+            },
             onChapterEnter: [
                 {layer: 'capacity', opacity: 0},
                 {layer: 'status', opacity: 0},
@@ -269,7 +287,7 @@ var config = {
                 {layer: 'topfive', opacity: 0},
                 {layer: 'newwalking', opacity: 0},
                 {layer: 'acrate', opacity: 0},
-                {layer: 'accomorate', opacity: 1},  
+                {layer: 'accomorate', opacity: 0},  
                 {layer: 'topfiveline', opacity: 0},
             ],        
         },
@@ -277,9 +295,9 @@ var config = {
             id: 'where?',
             alignment: 'center',
             hidden: false,
-            title: '어디를 조져야할까염',
+            title: 'We need more Cooling Center',
             image: 'https://github.com/synnpower/countermapping2/blob/main/SeoulIsTooHot/images/seoulheat.jpg?raw=true',
-            description: '그러게요',
+            description: '“무더위쉼터? 몰라. 점심 먹고 나면 더우니까 여기 앉아있는 거야.” ',
             location: {
                 center: [126.822376, 37.55835],
                 zoom: 10.7,
@@ -288,7 +306,10 @@ var config = {
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
-            callback:"",
+            callback:() => {
+                document.getElementById("capacity_legend").style.visibility = "hidden";
+                document.getElementById("ac_legend").style.visibility = "hidden";
+            },
             onChapterEnter: [
                 {layer: 'capacity', opacity: 0},
                 {layer: 'status', opacity: 0},
@@ -309,7 +330,7 @@ var config = {
                 {layer: 'dongline', opacity: 0},
                 {layer: 'seoul', opacity: 1},
                 {layer: 'newcenter', opacity: 0},
-                {layer: 'topfive', opacity: 0},
+                {layer: 'topfive', opacity: 0.5},
                 {layer: 'newwalking', opacity: 0},
                 {layer: 'acrate', opacity: 0},
                 {layer: 'accomorate', opacity: 0},  
@@ -331,7 +352,10 @@ var config = {
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
-            callback: '',
+            callback:() => {
+                document.getElementById("capacity_legend").style.visibility = "hidden";
+                document.getElementById("ac_legend").style.visibility = "hidden";
+            },
             onChapterEnter: [
                 {layer: 'capacity', opacity: 0},
                 {layer: 'status', opacity: 0},
@@ -347,16 +371,16 @@ var config = {
             ],
             onChapterExit: [
                 {layer: 'capacity', opacity: 0},
-                {layer: 'status', opacity: 0},
-                {layer: 'walking', opacity: 0},
+                {layer: 'status', opacity: 1},
+                {layer: 'walking', opacity: 0.5},
                 {layer: 'dongline', opacity: 1},
                 {layer: 'seoul', opacity: 1},
                 {layer: 'newcenter', opacity: 0},
-                {layer: 'topfive', opacity: 0.5},
+                {layer: 'topfive', opacity: 0},
                 {layer: 'newwalking', opacity: 0},
                 {layer: 'acrate', opacity: 0},
                 {layer: 'accomorate', opacity: 0},  
-                {layer: 'topfiveline', opacity: 0},
+                {layer: 'topfiveline', opacity: 1},
             ],        
         },
         {
@@ -376,7 +400,10 @@ var config = {
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
-            callback: '',
+            callback:() => {
+                document.getElementById("capacity_legend").style.visibility = "hidden";
+                document.getElementById("ac_legend").style.visibility = "hidden";
+            },
             onChapterEnter: [
                 {layer: 'capacity', opacity: 0},
                 {layer: 'status', opacity: 1},
@@ -396,9 +423,9 @@ var config = {
                 {layer: 'walking', opacity: 0.5},
                 {layer: 'dongline', opacity: 0},
                 {layer: 'seoul', opacity: 1},
-                {layer: 'newcenter', opacity: 0},
+                {layer: 'newcenter', opacity: 1},
                 {layer: 'topfive', opacity: 0},
-                {layer: 'newwalking', opacity: 0},
+                {layer: 'newwalking', opacity: 0.5},
                 {layer: 'acrate', opacity: 0},
                 {layer: 'accomorate', opacity: 0},  
                 {layer: 'topfiveline', opacity: 1},
@@ -421,7 +448,10 @@ var config = {
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
-            callback: '',
+            callback:() => {
+                document.getElementById("capacity_legend").style.visibility = "hidden";
+                document.getElementById("ac_legend").style.visibility = "hidden";
+            },
             onChapterEnter: [
                 {layer: 'capacity', opacity: 0},
                 {layer: 'status', opacity: 1},
@@ -441,9 +471,9 @@ var config = {
                 {layer: 'walking', opacity: 0.5},
                 {layer: 'dongline', opacity: 0},
                 {layer: 'seoul', opacity: 1},
-                {layer: 'newcenter', opacity: 1},
+                {layer: 'newcenter', opacity: 0},
                 {layer: 'topfive', opacity: 0},
-                {layer: 'newwalking', opacity: 0.5},
+                {layer: 'newwalking', opacity: 0},
                 {layer: 'acrate', opacity: 0},
                 {layer: 'accomorate', opacity: 0},  
                 {layer: 'topfiveline', opacity: 1},
@@ -466,7 +496,10 @@ var config = {
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
-            callback: '',
+            callback:() => {
+                document.getElementById("capacity_legend").style.visibility = "hidden";
+                document.getElementById("ac_legend").style.visibility = "hidden";
+            },
             onChapterEnter: [
                 {layer: 'capacity', opacity: 0},
                 {layer: 'status', opacity: 1},
@@ -486,9 +519,9 @@ var config = {
                 {layer: 'walking', opacity: 0.5},
                 {layer: 'dongline', opacity: 0},
                 {layer: 'seoul', opacity: 1},
-                {layer: 'newcenter', opacity: 0},
+                {layer: 'newcenter', opacity: 1},
                 {layer: 'topfive', opacity: 0},
-                {layer: 'newwalking', opacity: 0},
+                {layer: 'newwalking', opacity: 0.5},
                 {layer: 'acrate', opacity: 0},
                 {layer: 'accomorate', opacity: 0},  
                 {layer: 'topfiveline', opacity: 1},
@@ -511,7 +544,10 @@ var config = {
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
-            callback: '',
+            callback:() => {
+                document.getElementById("capacity_legend").style.visibility = "hidden";
+                document.getElementById("ac_legend").style.visibility = "hidden";
+            },
             onChapterEnter: [
                 {layer: 'capacity', opacity: 0},
                 {layer: 'status', opacity: 1},
@@ -556,7 +592,10 @@ var config = {
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
-            callback: '',
+            callback:() => {
+                document.getElementById("capacity_legend").style.visibility = "hidden";
+                document.getElementById("ac_legend").style.visibility = "hidden";
+            },
             onChapterEnter: [
                 {layer: 'capacity', opacity: 0},
                 {layer: 'status', opacity: 1},
@@ -601,7 +640,10 @@ var config = {
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
-            callback: '',
+            callback:() => {
+                document.getElementById("capacity_legend").style.visibility = "hidden";
+                document.getElementById("ac_legend").style.visibility = "hidden";
+            },
             onChapterEnter: [
                 {layer: 'capacity', opacity: 0},
                 {layer: 'status', opacity: 1},
@@ -646,7 +688,10 @@ var config = {
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
-            callback: '',
+            callback:() => {
+                document.getElementById("capacity_legend").style.visibility = "hidden";
+                document.getElementById("ac_legend").style.visibility = "hidden";
+            },
             onChapterEnter: [
                 {layer: 'capacity', opacity: 0},
                 {layer: 'status', opacity: 1},
@@ -686,6 +731,38 @@ var config = {
                 pitch: 0,
                 bearing: 0
             },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback:() => {
+                document.getElementById("capacity_legend").style.visibility = "hidden";
+                document.getElementById("ac_legend").style.visibility = "hidden";
+            },
+            onChapterEnter: [
+                {layer: 'capacity', opacity: 0},
+                {layer: 'status', opacity: 1},
+                {layer: 'walking', opacity: 0},
+                {layer: 'dongline', opacity: 0},
+                {layer: 'seoul', opacity: 1},
+                {layer: 'newcenter', opacity: 1},
+                {layer: 'topfive', opacity: 0},
+                {layer: 'newwalking', opacity: 0},
+                {layer: 'acrate', opacity: 0},
+                {layer: 'accomorate', opacity: 0},  
+                {layer: 'topfiveline', opacity: 1},
+            ],
+            onChapterExit: [
+                {layer: 'capacity', opacity: 0},
+                {layer: 'status', opacity: 0},
+                {layer: 'walking', opacity: 0},
+                {layer: 'dongline', opacity: 0},
+                {layer: 'seoul', opacity: 1},
+                {layer: 'newcenter', opacity: 0},
+                {layer: 'topfive', opacity: 0},
+                {layer: 'newwalking', opacity: 0},
+                {layer: 'acrate', opacity: 0},
+                {layer: 'accomorate', opacity: 0},  
+                {layer: 'topfiveline', opacity: 0},
+            ],  
         },
         {
             id: 'conclusion2',
@@ -698,6 +775,38 @@ var config = {
                 pitch: 0,
                 bearing: 0
             },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback:() => {
+                document.getElementById("capacity_legend").style.visibility = "hidden";
+                document.getElementById("ac_legend").style.visibility = "hidden";
+            },
+            onChapterEnter: [
+                {layer: 'capacity', opacity: 0},
+                {layer: 'status', opacity: 1},
+                {layer: 'walking', opacity: 0},
+                {layer: 'dongline', opacity: 0},
+                {layer: 'seoul', opacity: 1},
+                {layer: 'newcenter', opacity: 1},
+                {layer: 'topfive', opacity: 0},
+                {layer: 'newwalking', opacity: 0},
+                {layer: 'acrate', opacity: 0},
+                {layer: 'accomorate', opacity: 0},  
+                {layer: 'topfiveline', opacity: 1},
+            ],
+            onChapterExit: [
+                {layer: 'capacity', opacity: 0},
+                {layer: 'status', opacity: 0},
+                {layer: 'walking', opacity: 0},
+                {layer: 'dongline', opacity: 0},
+                {layer: 'seoul', opacity: 1},
+                {layer: 'newcenter', opacity: 0},
+                {layer: 'topfive', opacity: 0},
+                {layer: 'newwalking', opacity: 0},
+                {layer: 'acrate', opacity: 0},
+                {layer: 'accomorate', opacity: 0},  
+                {layer: 'topfiveline', opacity: 0},
+            ],              
         },
         {
             id: 'conclusion3',
@@ -709,7 +818,40 @@ var config = {
                 zoom: 10.7,
                 pitch: 0,
                 bearing: 0
+            },     
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback:() => {
+                document.getElementById("capacity_legend").style.visibility = "hidden";
+                document.getElementById("ac_legend").style.visibility = "hidden";
             },
+            onChapterEnter: [
+                {layer: 'capacity', opacity: 0},
+                {layer: 'status', opacity: 1},
+                {layer: 'walking', opacity: 0},
+                {layer: 'dongline', opacity: 0},
+                {layer: 'seoul', opacity: 1},
+                {layer: 'newcenter', opacity: 1},
+                {layer: 'topfive', opacity: 0},
+                {layer: 'newwalking', opacity: 0},
+                {layer: 'acrate', opacity: 0},
+                {layer: 'accomorate', opacity: 0},  
+                {layer: 'topfiveline', opacity: 1},
+            ],
+            onChapterExit: [
+                {layer: 'capacity', opacity: 0},
+                {layer: 'status', opacity: 0},
+                {layer: 'walking', opacity: 0},
+                {layer: 'dongline', opacity: 0},
+                {layer: 'seoul', opacity: 1},
+                {layer: 'newcenter', opacity: 0},
+                {layer: 'topfive', opacity: 0},
+                {layer: 'newwalking', opacity: 0},
+                {layer: 'acrate', opacity: 0},
+                {layer: 'accomorate', opacity: 0},  
+                {layer: 'topfiveline', opacity: 0},
+            ],                     
         },
+        
     ]
 };

@@ -278,7 +278,7 @@ map.on("load", function() {
             chapter.onChapterEnter.forEach(setLayerOpacity);
         }
         if (chapter.callback) {
-            window[chapter.callback]();
+            chapter.callback();
         }
         if (chapter.rotateAnimation) {
             map.once('moveend', () => {
