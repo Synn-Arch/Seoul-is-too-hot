@@ -176,7 +176,7 @@ a, a:hover, a:visited {
 .step {
     padding-bottom: 50vh;
     /* margin-bottom: 10vh; */
-    opacity: 0.25;
+    opacity: 0.9;
 }
 .step.active {
     opacity: 0.9;
@@ -186,7 +186,7 @@ a, a:hover, a:visited {
     padding:  25px 50px;
     line-height: 25px;
     font-size: 13px;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
 }
 
 .step img {
