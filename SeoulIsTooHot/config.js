@@ -890,7 +890,7 @@ var config = {
                 {layer: 'accomorate', opacity: 0},  
                 {layer: 'topfiveline', opacity: 0},
                 {layer: 'seoul-fill1', opacity: 0},
-                {layer: 'seoul-fill2', opacity: 0.2},
+                {layer: 'seoul-fill2', opacity: 0},
             ],              
         },
 
