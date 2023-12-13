@@ -411,8 +411,8 @@ var config = {
             alignment: 'center',
             hidden: false,
             title: 'By the way, why there are lack of Cooling Centers?',
-            image: 'https://github.com/synnpower/countermapping2/blob/main/SeoulIsTooHot/images/IdontknowCoolingCenter.jpg?raw=true',
-            description: '“I dont know about a cooling center, I am just sitting here because it gets hot after lunch.”',
+            image: 'https://github.com/synnpower/countermapping2/blob/main/SeoulIsTooHot/images/b3341835-12bb-49a2-bd48-e20bc7dcf7b7.jpg?raw=true',
+            description: ' The majority of Cooling Centers are designated within Senior Community Centers, so excluding Senior Community Centers, the number of facilities used as Cooling Centers is very limited. ',
             location: {
                 center: [126.822376, 37.55835],
                 zoom: 10.7,
@@ -467,8 +467,8 @@ var config = {
             id: '1st reason',
             alignment: 'left',
             hidden: false,
-            image: 'https://github.com/synnpower/countermapping2/blob/main/SeoulIsTooHot/images/1_%EB%8C%80%EC%A7%80%201%20%EC%82%AC%EB%B3%B8.jpg?raw=true',
-            description: '쿨링센터를 지정할만한 건물이 없으니깐!',
+            image: 'https://github.com/synnpower/countermapping2/blob/main/SeoulIsTooHot/images/Feedback1.png?raw=true',
+            description: 'Since Cooling Centers in Seoul are temporary facilities designated within existing facilities, it is important to make good use of the existing infrastructure. But there is no guarantee that Senior Community Centers will be installed where vulnerable elderly populations reside in clusters. \n In the majority of the five designated target areas, when excluding Senior Community Centers, it becomes evident that there is an insufficient presence of significant Cooling Centers. This indicates the need to expand the category of facilities designated as Cooling Centers.',
             location: {
                 center: [126.822376, 37.55835],
                 zoom: 10.7,
