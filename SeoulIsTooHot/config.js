@@ -1,19 +1,19 @@
 var config = {
     style:  'mapbox://styles/synnpower/clox1otla00i501qd628e5bvk',
     accessToken: 'pk.eyJ1Ijoic3lubnBvd2VyIiwiYSI6ImNsbHBtOWE1MjA2bDYzaW5yY2tzeWZ6cW0ifQ.kteK0IjXELUFn9HM9qnmHQ',
-    showMarkers: false, //맵에 이상한 표시 마커 그거...
-    markerColor: '#3FB1CE', //마커없어
-    inset: false, //보조맵
-    use3dTerrain: false, //set true for enabling 3D maps.
+    showMarkers: false,
+    markerColor: '#3FB1CE',
+    inset: false,
+    use3dTerrain: false,
     theme: 'light',
     kortitle: '서울은 너무 더워요',
     title: 'Seoul is Too Hot',
     subtitle: "South Korea's heat-vulnerable elderly population \n and Cooling Centers.",
-    author: "December 2023 \n SungHo",
+    author: "December 2023 \n SungHo Synn",
     byline: 'Introduction',
     para1: 'This research delves into the examination and analysis of Cooling Centers, vital welfare facilities catering to the needs of vulnerable elderly populations confronting extreme summer climate conditions in Seoul, South Korea. The primary objective of this study was to evaluate the effectiveness of Cooling Centers in each administrative district, with a focus on their capacities to meet the rising demand. By doing so, this research aims to contribute valuable insights to the provision of welfare services in appropriate locations.',
     para2: 'The analysis revealed that several administrative districts in Seoul struggled to secure Cooling Centers with capacities matching the elderly vulnerable population. Additionally, the availability of overnight accommodations in these facilities was generally limited across the city. These findings emphasize the urgent need for solutions to assist elderly vulnerable populations in coping with prolonged tropical heat in Seoul. Furthermore, the research highlights that Cooling Centers should consider other vulnerable groups in addition to the elderly in their services.',
-    footer: 'Source: source citations, etc. <br> Created using <a href="https://github.com/mapbox/storytelling" target="_blank">Mapbox Storytelling</a> template.',
+    footer: 'Source: Bae, Min-Ki, Bo-Eun Kim, and Chae-Yeon Lee. 2020. “Analysis on the Spatial Relationship between the Residential Area of the Vulnerable Groups and the Hazardous Area during the Heat Wave.” Journal of Environmental Policy and Administration 28 (3): 243~80. \n Hyunmi, Kang, and Park Sohyun. 2007. “Characteristics of Walking Environment in Apartment Complexes on Gradient Sites.” Architecutre & Urban Research Information Center, November. \n Jenerette, G. Darrel, Sharon L. Harlan, William L. Stefanov, and Chris A. Martin. 2011. “Ecosystem Services and Urban Heat Riskscape Moderation: Water, Green Spaces, and Social Inequality in Phoenix, USA.” Ecological Applications: A Publication of the Ecological Society of America 21 (7): 2637~51. \n Jung, Sangyun, and Dong-Wook Sohn. 2019. “An Evaluation of Pedestrian Environments based on the Criteria of Universal Design Theory - A case study of old town area in Seoul -.” Journal of the architectural institute of Korea planning & design 35 (1): 117~25. \n Kim, Jin-Wook. 2008. “A Study on the Cooling Center Manual of Facility and Maintenance for Extreme Heat Disaster.” Journal of the Korean Society of Hazard Mitigation 8 (4): 17~22. \n Lee, Min. 2022. Establishing Guideline for Elderly Peoples Healthy Life. National Evidence-based Healthcare Collaborating Agency. \n Park, Seongwoo, Joo-Yeon Hwang, Hyoeun Kim, Youngju Lee, JongHee Kim, and Younjhin Ahn. 2023. “Results of the 2022 Heat-Related Illness Surveillance.” Public Health Weekly Report 16 (Issue: 9): Pages: 241-252. \n Son, Ho-Hee, and Eun-Jung Kim. 2013. “Analysis of Spatio-Temporal Parameters of Gait in Elderly by Various Walking Pathways Width.” The Journal of the Korea Contents Association 13 (10): 444~51. \n Song, Gowook. 2013. “Emergency Measures for Vulnerable Populations to Heatwaves.” Busan Development Institute, no. BDI Focus (June). \n Yoon, Yongseon, Sanggweon Lee, and Hwenghwan Ahn. 2016. “A long-term counterproposal of Heat wave damage measures for climate change.” Journal of disaster prevention v.18 no.5, pp.12-35. <br> Created using <a href="https://github.com/mapbox/storytelling" target="_blank">Mapbox Storytelling</a> template.',
     chapters: [
         {
             id: '1st-chapter',
@@ -50,6 +50,8 @@ var config = {
                 {layer: 'topfiveline', opacity: 0},
                 {layer: 'seoul-fill1', opacity: 0},
                 {layer: 'seoul-fill2', opacity: 0},
+                {layer: 'statustwo', opacity: 0},
+                {layer: 'expenditureforelder', opacity: 0},
             ],
             onChapterExit: [
                 {layer: 'capacity', opacity: 0},
@@ -64,7 +66,9 @@ var config = {
                 {layer: 'accomorate', opacity: 0},        
                 {layer: 'topfiveline', opacity: 0},  
                 {layer: 'seoul-fill1', opacity: 0},
-                {layer: 'seoul-fill2', opacity: 0},             
+                {layer: 'seoul-fill2', opacity: 0},  
+                {layer: 'statustwo', opacity: 0},
+                {layer: 'expenditureforelder', opacity: 0},           
             ],     
         },
         {
@@ -102,6 +106,8 @@ var config = {
                 {layer: 'topfiveline', opacity: 0},
                 {layer: 'seoul-fill1', opacity: 0},
                 {layer: 'seoul-fill2', opacity: 0},
+                {layer: 'statustwo', opacity: 0},
+                {layer: 'expenditureforelder', opacity: 0},
             ],
             onChapterExit: [
                 {layer: 'capacity', opacity: 0},
@@ -117,6 +123,8 @@ var config = {
                 {layer: 'topfiveline', opacity: 0},
                 {layer: 'seoul-fill1', opacity: 0},
                 {layer: 'seoul-fill2', opacity: 0},
+                {layer: 'statustwo', opacity: 0},
+                {layer: 'expenditureforelder', opacity: 0},
             ],      
         },
         {
@@ -154,6 +162,8 @@ var config = {
                 {layer: 'topfiveline', opacity: 0},
                 {layer: 'seoul-fill1', opacity: 0},
                 {layer: 'seoul-fill2', opacity: 0},
+                {layer: 'statustwo', opacity: 0},
+                {layer: 'expenditureforelder', opacity: 0},
             ],
             onChapterExit: [
                 {layer: 'capacity', opacity: 1},
@@ -169,6 +179,8 @@ var config = {
                 {layer: 'topfiveline', opacity: 0},
                 {layer: 'seoul-fill1', opacity: 0},
                 {layer: 'seoul-fill2', opacity: 0},
+                {layer: 'statustwo', opacity: 0},
+                {layer: 'expenditureforelder', opacity: 0},
             ],     
         },
         {
@@ -206,6 +218,8 @@ var config = {
                 {layer: 'topfiveline', opacity: 0},
                 {layer: 'seoul-fill1', opacity: 0},
                 {layer: 'seoul-fill2', opacity: 0},
+                {layer: 'statustwo', opacity: 0},
+                {layer: 'expenditureforelder', opacity: 0},
             ],
             onChapterExit: [
                 {layer: 'capacity', opacity: 0},
@@ -221,6 +235,8 @@ var config = {
                 {layer: 'topfiveline', opacity: 0},
                 {layer: 'seoul-fill1', opacity: 0},
                 {layer: 'seoul-fill2', opacity: 0},
+                {layer: 'statustwo', opacity: 0},
+                {layer: 'expenditureforelder', opacity: 0},
             ],     
         },
         {
@@ -258,6 +274,8 @@ var config = {
                 {layer: 'topfiveline', opacity: 0},
                 {layer: 'seoul-fill1', opacity: 0},
                 {layer: 'seoul-fill2', opacity: 0},
+                {layer: 'statustwo', opacity: 0},
+                {layer: 'expenditureforelder', opacity: 0},
             ],
             onChapterExit: [
                 {layer: 'capacity', opacity: 0},
@@ -273,6 +291,8 @@ var config = {
                 {layer: 'topfiveline', opacity: 0},
                 {layer: 'seoul-fill1', opacity: 0},
                 {layer: 'seoul-fill2', opacity: 0},
+                {layer: 'statustwo', opacity: 0},
+                {layer: 'expenditureforelder', opacity: 0},
             ],     
         },
         {
@@ -310,12 +330,181 @@ var config = {
                 {layer: 'topfiveline', opacity: 0},
                 {layer: 'seoul-fill1', opacity: 0},
                 {layer: 'seoul-fill2', opacity: 0},
+                {layer: 'statustwo', opacity: 0},
+                {layer: 'expenditureforelder', opacity: 0},
             ],
             onChapterExit: [
                 {layer: 'capacity', opacity: 0},
                 {layer: 'status', opacity: 0},
                 {layer: 'walking', opacity: 0},
+                {layer: 'dongline', opacity: 0},
+                {layer: 'seoul', opacity: 1},
+                {layer: 'newcenter', opacity: 0},
+                {layer: 'topfive', opacity: 0.5},
+                {layer: 'newwalking', opacity: 0},
+                {layer: 'acrate', opacity: 0},
+                {layer: 'accomorate', opacity: 0},  
+                {layer: 'topfiveline', opacity: 1},
+                {layer: 'seoul-fill1', opacity: 0},
+                {layer: 'seoul-fill2', opacity: 0},
+                {layer: 'statustwo', opacity: 0},
+                {layer: 'expenditureforelder', opacity: 0},
+            ],        
+        },
+        { 
+            id: 'focus1',
+            alignment: 'left',
+            hidden: false,
+            image: 'https://github.com/synnpower/countermapping2/blob/main/SeoulIsTooHot/images/1_%EB%8C%80%EC%A7%80%201%20%EC%82%AC%EB%B3%B8.jpg?raw=true',
+            description: 'Utilizing the findings derived from the analysis presented in Chapter Three, I identified the five administrative districts characterized by the lowest Ratio of Facility Capacity to Low-Income Elderly Population. These districts exhibit occupancy rates spanning from 11% to 20%, with the overnight stay occupancy rate falling within the range of 0% to 18%. These findings underscore the inadequacy of Cooling Centers capacity and quantity in addressing the requirements of the vulnerable elderly population.',
+            location: {
+                center: [126.822376, 37.55835],
+                zoom: 10.7,
+                pitch: 0,
+                bearing: 0
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback:() => {
+                document.getElementById("capacity_legend").style.visibility = "hidden";
+                document.getElementById("ac_legend").style.visibility = "hidden";
+                document.getElementById("accomo_legend").style.visibility = "hidden";
+                document.getElementById("walking_legend").style.visibility = "hidden";
+            },
+            onChapterEnter: [
+                {layer: 'capacity', opacity: 0},
+                {layer: 'status', opacity: 0},
+                {layer: 'walking', opacity: 0},
                 {layer: 'dongline', opacity: 1},
+                {layer: 'seoul', opacity: 1},
+                {layer: 'newcenter', opacity: 0},
+                {layer: 'topfive', opacity: 0.5},
+                {layer: 'newwalking', opacity: 0},
+                {layer: 'acrate', opacity: 0},
+                {layer: 'accomorate', opacity: 0},  
+                {layer: 'topfiveline', opacity: 1},
+                {layer: 'seoul-fill1', opacity: 0},
+                {layer: 'seoul-fill2', opacity: 0},
+                {layer: 'statustwo', opacity: 0},
+                {layer: 'expenditureforelder', opacity: 0},
+            ],
+            onChapterExit: [
+                {layer: 'capacity', opacity: 0},
+                {layer: 'status', opacity: 0},
+                {layer: 'walking', opacity: 0},
+                {layer: 'dongline', opacity: 0},
+                {layer: 'seoul', opacity: 1},
+                {layer: 'newcenter', opacity: 0},
+                {layer: 'topfive', opacity: 0.5},
+                {layer: 'newwalking', opacity: 0},
+                {layer: 'acrate', opacity: 0},
+                {layer: 'accomorate', opacity: 0},  
+                {layer: 'topfiveline', opacity: 1},
+                {layer: 'seoul-fill1', opacity: 0},
+                {layer: 'seoul-fill2', opacity: 0},
+                {layer: 'statustwo', opacity: 0},
+                {layer: 'expenditureforelder', opacity: 0},
+            ],        
+        },
+        {
+            id: 'why?',
+            alignment: 'center',
+            hidden: false,
+            title: 'By the way, why there are lack of Cooling Centers?',
+            image: 'https://github.com/synnpower/countermapping2/blob/main/SeoulIsTooHot/images/IdontknowCoolingCenter.jpg?raw=true',
+            description: '“I dont know about a cooling center, I am just sitting here because it gets hot after lunch.”',
+            location: {
+                center: [126.822376, 37.55835],
+                zoom: 10.7,
+                pitch: 0,
+                bearing: 0
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback:() => {
+                document.getElementById("capacity_legend").style.visibility = "hidden";
+                document.getElementById("ac_legend").style.visibility = "hidden";
+                document.getElementById("accomo_legend").style.visibility = "hidden";
+                document.getElementById("walking_legend").style.visibility = "hidden";
+            },
+            onChapterEnter: [
+                {layer: 'capacity', opacity: 0},
+                {layer: 'status', opacity: 0},
+                {layer: 'walking', opacity: 0},
+                {layer: 'dongline', opacity: 0},
+                {layer: 'seoul', opacity: 1},
+                {layer: 'newcenter', opacity: 0},
+                {layer: 'topfive', opacity: 0.5},
+                {layer: 'newwalking', opacity: 0},
+                {layer: 'acrate', opacity: 0},
+                {layer: 'accomorate', opacity: 0},  
+                {layer: 'topfiveline', opacity: 1},
+                {layer: 'seoul-fill1', opacity: 0},
+                {layer: 'seoul-fill2', opacity: 0},
+                {layer: 'statustwo', opacity: 0},
+                {layer: 'expenditureforelder', opacity: 0},
+                
+            ],
+            onChapterExit: [
+                {layer: 'capacity', opacity: 0},
+                {layer: 'status', opacity: 0},
+                {layer: 'walking', opacity: 0},
+                {layer: 'dongline', opacity: 0},
+                {layer: 'seoul', opacity: 1},
+                {layer: 'newcenter', opacity: 0},
+                {layer: 'topfive', opacity: 0.5},
+                {layer: 'newwalking', opacity: 0},
+                {layer: 'acrate', opacity: 0},
+                {layer: 'accomorate', opacity: 0},  
+                {layer: 'topfiveline', opacity: 1},
+                {layer: 'seoul-fill1', opacity: 0},
+                {layer: 'seoul-fill2', opacity: 0},
+                {layer: 'statustwo', opacity: 1},
+                {layer: 'expenditureforelder', opacity: 0},
+            ],      
+        },
+        { 
+            id: '1st reason',
+            alignment: 'left',
+            hidden: false,
+            image: 'https://github.com/synnpower/countermapping2/blob/main/SeoulIsTooHot/images/1_%EB%8C%80%EC%A7%80%201%20%EC%82%AC%EB%B3%B8.jpg?raw=true',
+            description: '쿨링센터를 지정할만한 건물이 없으니깐!',
+            location: {
+                center: [126.822376, 37.55835],
+                zoom: 10.7,
+                pitch: 0,
+                bearing: 0
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback:() => {
+                document.getElementById("capacity_legend").style.visibility = "hidden";
+                document.getElementById("ac_legend").style.visibility = "hidden";
+                document.getElementById("accomo_legend").style.visibility = "hidden";
+                document.getElementById("walking_legend").style.visibility = "hidden";
+            },
+            onChapterEnter: [
+                {layer: 'capacity', opacity: 0},
+                {layer: 'status', opacity: 0},
+                {layer: 'walking', opacity: 0},
+                {layer: 'dongline', opacity: 0},
+                {layer: 'seoul', opacity: 1},
+                {layer: 'newcenter', opacity: 0},
+                {layer: 'topfive', opacity: 0.5},
+                {layer: 'newwalking', opacity: 0},
+                {layer: 'acrate', opacity: 0},
+                {layer: 'accomorate', opacity: 0},  
+                {layer: 'topfiveline', opacity: 1},
+                {layer: 'seoul-fill1', opacity: 0},
+                {layer: 'seoul-fill2', opacity: 0},
+                {layer: 'statustwo', opacity: 1},
+                {layer: 'expenditureforelder', opacity: 0},
+            ],
+            onChapterExit: [
+                {layer: 'capacity', opacity: 0},
+                {layer: 'status', opacity: 0},
+                {layer: 'walking', opacity: 0},
+                {layer: 'dongline', opacity: 0},
                 {layer: 'seoul', opacity: 1},
                 {layer: 'newcenter', opacity: 0},
                 {layer: 'topfive', opacity: 0},
@@ -325,8 +514,10 @@ var config = {
                 {layer: 'topfiveline', opacity: 0},
                 {layer: 'seoul-fill1', opacity: 0},
                 {layer: 'seoul-fill2', opacity: 0},
-            ],        
-        },
+                {layer: 'statustwo', opacity: 0},
+                {layer: 'expenditureforelder', opacity: 0},
+            ],     
+        },       
         {
             id: 'where?',
             alignment: 'center',
@@ -362,6 +553,8 @@ var config = {
                 {layer: 'topfiveline', opacity: 0},
                 {layer: 'seoul-fill1', opacity: 0},
                 {layer: 'seoul-fill2', opacity: 0},
+                {layer: 'statustwo', opacity: 0},
+                {layer: 'expenditureforelder', opacity: 0},
             ],
             onChapterExit: [
                 {layer: 'capacity', opacity: 0},
@@ -377,11 +570,13 @@ var config = {
                 {layer: 'topfiveline', opacity: 0},
                 {layer: 'seoul-fill1', opacity: 0},
                 {layer: 'seoul-fill2', opacity: 0},
+                {layer: 'statustwo', opacity: 0},
+                {layer: 'expenditureforelder', opacity: 0},
             ],      
         },
         { 
             id: 'elder',
-            alignment: 'left',
+            alignment: 'center',
             hidden: false,
             image: 'https://github.com/synnpower/countermapping2/blob/main/SeoulIsTooHot/images/%EB%AC%B4%EC%A0%9C-2_%EB%8C%80%EC%A7%80%201%20%EC%82%AC%EB%B3%B8%202_%EB%8C%80%EC%A7%80%201%20%EC%82%AC%EB%B3%B8%202.png?raw=true',
             description: '',
@@ -403,7 +598,7 @@ var config = {
                 {layer: 'capacity', opacity: 0},
                 {layer: 'status', opacity: 0},
                 {layer: 'walking', opacity: 0},
-                {layer: 'dongline', opacity: 1},
+                {layer: 'dongline', opacity: 0},
                 {layer: 'seoul', opacity: 1},
                 {layer: 'newcenter', opacity: 0},
                 {layer: 'topfive', opacity: 0},
@@ -413,6 +608,8 @@ var config = {
                 {layer: 'topfiveline', opacity: 0},
                 {layer: 'seoul-fill1', opacity: 0},
                 {layer: 'seoul-fill2', opacity: 0},
+                {layer: 'statustwo', opacity: 0},
+                {layer: 'expenditureforelder', opacity: 0},
             ],
             onChapterExit: [
                 {layer: 'capacity', opacity: 0},
@@ -428,57 +625,8 @@ var config = {
                 {layer: 'topfiveline', opacity: 1},
                 {layer: 'seoul-fill1', opacity: 0},
                 {layer: 'seoul-fill2', opacity: 0},
-            ],        
-        },
-        { 
-            id: 'focus',
-            alignment: 'left',
-            hidden: false,
-            image: 'https://github.com/synnpower/countermapping2/blob/main/SeoulIsTooHot/images/1_%EB%8C%80%EC%A7%80%201%20%EC%82%AC%EB%B3%B8.jpg?raw=true',
-            description: 'Utilizing the findings derived from the analysis presented in Chapter Three, we identified the five administrative districts characterized by the lowest Ratio of Facility Capacity to Low-Income Elderly Population. These districts exhibit occupancy rates spanning from 11% to 20%, with the overnight stay occupancy rate falling within the range of 0% to 18%. These findings underscore the inadequacy of Cooling Centers capacity and quantity in addressing the requirements of the vulnerable elderly population.',
-            location: {
-                center: [126.822376, 37.55835],
-                zoom: 10.7,
-                pitch: 0,
-                bearing: 0
-            },
-            mapAnimation: 'flyTo',
-            rotateAnimation: false,
-            callback:() => {
-                document.getElementById("capacity_legend").style.visibility = "hidden";
-                document.getElementById("ac_legend").style.visibility = "hidden";
-                document.getElementById("accomo_legend").style.visibility = "hidden";
-                document.getElementById("walking_legend").style.visibility = "hidden";
-            },
-            onChapterEnter: [
-                {layer: 'capacity', opacity: 0},
-                {layer: 'status', opacity: 0},
-                {layer: 'walking', opacity: 0},
-                {layer: 'dongline', opacity: 1},
-                {layer: 'seoul', opacity: 1},
-                {layer: 'newcenter', opacity: 0},
-                {layer: 'topfive', opacity: 0.5},
-                {layer: 'newwalking', opacity: 0},
-                {layer: 'acrate', opacity: 0},
-                {layer: 'accomorate', opacity: 0},  
-                {layer: 'topfiveline', opacity: 1},
-                {layer: 'seoul-fill1', opacity: 0},
-                {layer: 'seoul-fill2', opacity: 0},
-            ],
-            onChapterExit: [
-                {layer: 'capacity', opacity: 0},
-                {layer: 'status', opacity: 1},
-                {layer: 'walking', opacity: 0.5},
-                {layer: 'dongline', opacity: 1},
-                {layer: 'seoul', opacity: 1},
-                {layer: 'newcenter', opacity: 0},
-                {layer: 'topfive', opacity: 0},
-                {layer: 'newwalking', opacity: 0},
-                {layer: 'acrate', opacity: 0},
-                {layer: 'accomorate', opacity: 0},  
-                {layer: 'topfiveline', opacity: 1},
-                {layer: 'seoul-fill1', opacity: 0},
-                {layer: 'seoul-fill2', opacity: 0},
+                {layer: 'statustwo', opacity: 0},
+                {layer: 'expenditureforelder', opacity: 0},
             ],        
         },
         {
@@ -516,6 +664,8 @@ var config = {
                 {layer: 'topfiveline', opacity: 1},
                 {layer: 'seoul-fill1', opacity: 0},
                 {layer: 'seoul-fill2', opacity: 0},
+                {layer: 'statustwo', opacity: 0},
+                {layer: 'expenditureforelder', opacity: 0},
             ],
             onChapterExit: [
                 {layer: 'capacity', opacity: 0},
@@ -531,6 +681,8 @@ var config = {
                 {layer: 'topfiveline', opacity: 1},
                 {layer: 'seoul-fill1', opacity: 0},
                 {layer: 'seoul-fill2', opacity: 0},
+                {layer: 'statustwo', opacity: 0},
+                {layer: 'expenditureforelder', opacity: 0},
             ],        
         },
         {
@@ -568,6 +720,8 @@ var config = {
                 {layer: 'topfiveline', opacity: 1},
                 {layer: 'seoul-fill1', opacity: 0},
                 {layer: 'seoul-fill2', opacity: 0},
+                {layer: 'statustwo', opacity: 0},
+                {layer: 'expenditureforelder', opacity: 0},
             ],
             onChapterExit: [
                 {layer: 'capacity', opacity: 0},
@@ -583,6 +737,8 @@ var config = {
                 {layer: 'topfiveline', opacity: 1},
                 {layer: 'seoul-fill1', opacity: 0},
                 {layer: 'seoul-fill2', opacity: 0},
+                {layer: 'statustwo', opacity: 0},
+                {layer: 'expenditureforelder', opacity: 0},
             ],              
         },
         {
@@ -620,6 +776,8 @@ var config = {
                 {layer: 'topfiveline', opacity: 1},
                 {layer: 'seoul-fill1', opacity: 0},
                 {layer: 'seoul-fill2', opacity: 0},
+                {layer: 'statustwo', opacity: 0},
+                {layer: 'expenditureforelder', opacity: 0},
             ],
             onChapterExit: [
                 {layer: 'capacity', opacity: 0},
@@ -635,6 +793,8 @@ var config = {
                 {layer: 'topfiveline', opacity: 1},
                 {layer: 'seoul-fill1', opacity: 0},
                 {layer: 'seoul-fill2', opacity: 0},
+                {layer: 'statustwo', opacity: 0},
+                {layer: 'expenditureforelder', opacity: 0},
             ],  
         },
         {
@@ -672,6 +832,8 @@ var config = {
                 {layer: 'topfiveline', opacity: 1},
                 {layer: 'seoul-fill1', opacity: 0},
                 {layer: 'seoul-fill2', opacity: 0},
+                {layer: 'statustwo', opacity: 0},
+                {layer: 'expenditureforelder', opacity: 0},
             ],
             onChapterExit: [
                 {layer: 'capacity', opacity: 0},
@@ -687,6 +849,8 @@ var config = {
                 {layer: 'topfiveline', opacity: 1},
                 {layer: 'seoul-fill1', opacity: 0},
                 {layer: 'seoul-fill2', opacity: 0},
+                {layer: 'statustwo', opacity: 0},
+                {layer: 'expenditureforelder', opacity: 0},
             ],  
         },
         {
@@ -724,6 +888,8 @@ var config = {
                 {layer: 'topfiveline', opacity: 1},
                 {layer: 'seoul-fill1', opacity: 0},
                 {layer: 'seoul-fill2', opacity: 0},
+                {layer: 'statustwo', opacity: 0},
+                {layer: 'expenditureforelder', opacity: 0},
             ],
             onChapterExit: [
                 {layer: 'capacity', opacity: 0},
@@ -739,6 +905,8 @@ var config = {
                 {layer: 'topfiveline', opacity: 1},
                 {layer: 'seoul-fill1', opacity: 0},
                 {layer: 'seoul-fill2', opacity: 0},
+                {layer: 'statustwo', opacity: 0},
+                {layer: 'expenditureforelder', opacity: 0},
             ],  
         },
         {
@@ -776,6 +944,8 @@ var config = {
                 {layer: 'topfiveline', opacity: 1},
                 {layer: 'seoul-fill1', opacity: 0},
                 {layer: 'seoul-fill2', opacity: 0},
+                {layer: 'statustwo', opacity: 0},
+                {layer: 'expenditureforelder', opacity: 0},
             ],
             onChapterExit: [
                 {layer: 'capacity', opacity: 0},
@@ -791,6 +961,8 @@ var config = {
                 {layer: 'topfiveline', opacity: 0},
                 {layer: 'seoul-fill1', opacity: 0.2},
                 {layer: 'seoul-fill2', opacity: 0},
+                {layer: 'statustwo', opacity: 0},
+                {layer: 'expenditureforelder', opacity: 0},
             ],  
         },
         {
@@ -825,7 +997,9 @@ var config = {
                 {layer: 'accomorate', opacity: 0},  
                 {layer: 'topfiveline', opacity: 0},
                 {layer: 'seoul-fill1', opacity: 0.2},
-                {layer: 'seoul-fill2', opacity: 0},                  
+                {layer: 'seoul-fill2', opacity: 0},    
+                {layer: 'statustwo', opacity: 0},
+                {layer: 'expenditureforelder', opacity: 0},              
             ],
             onChapterExit: [
                 {layer: 'capacity', opacity: 0},
@@ -840,7 +1014,9 @@ var config = {
                 {layer: 'accomorate', opacity: 0},  
                 {layer: 'topfiveline', opacity: 0},
                 {layer: 'seoul-fill1', opacity: 0},
-                {layer: 'seoul-fill2', opacity: 0.2},                   
+                {layer: 'seoul-fill2', opacity: 0.2},   
+                {layer: 'statustwo', opacity: 0},
+                {layer: 'expenditureforelder', opacity: 0},                
             ],  
         },
         {
@@ -875,14 +1051,16 @@ var config = {
                 {layer: 'accomorate', opacity: 0},  
                 {layer: 'topfiveline', opacity: 0},
                 {layer: 'seoul-fill1', opacity: 0},
-                {layer: 'seoul-fill2', opacity: 0.2},                
+                {layer: 'seoul-fill2', opacity: 0.2},    
+                {layer: 'statustwo', opacity: 0},
+                {layer: 'expenditureforelder', opacity: 0},            
             ],
             onChapterExit: [
                 {layer: 'capacity', opacity: 0},
                 {layer: 'status', opacity: 0},
                 {layer: 'walking', opacity: 0},
                 {layer: 'dongline', opacity: 0},
-                {layer: 'seoul', opacity: 1},
+                {layer: 'seoul', opacity: 0},
                 {layer: 'newcenter', opacity: 0},
                 {layer: 'topfive', opacity: 0},
                 {layer: 'newwalking', opacity: 0},
@@ -891,6 +1069,8 @@ var config = {
                 {layer: 'topfiveline', opacity: 0},
                 {layer: 'seoul-fill1', opacity: 0},
                 {layer: 'seoul-fill2', opacity: 0},
+                {layer: 'statustwo', opacity: 0},
+                {layer: 'expenditureforelder', opacity: 0},
             ],              
         },
 

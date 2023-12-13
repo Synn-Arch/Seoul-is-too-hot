@@ -41,8 +41,12 @@ map.on('load',function(){
         'type':'vector',
         'url': 'mapbox://synnpower.1o8sszye' 
     });
+    map.addSource('expenditure',{
+        'type':'vector',
+        'url': 'mapbox://synnpower.28rfl3af' 
+    });
     
-    
+
     map.addLayer({
         'id':'capacity',
         'type':'fill',
@@ -107,6 +111,48 @@ map.on('load',function(){
 
 
     map.addLayer({
+        'id':'statustwo',
+        'type':'circle',
+        'source':'centerstatus',
+        'source-layer':'cooling-centers',
+        'paint': {
+            'circle-radius': 3,       
+            'circle-color': [
+                'match',
+                ['get', 'Fac_Type'],
+                1, 'rgba(255, 255, 255, 0)', //senior community center
+                2, '#008f2b', //welfare center
+                4, '#a6a000', //Public Health center                
+                5, '#cc6900', //Community Service center
+                7, '#8c009e', //Religious Facility
+                8, '#03005c', //Bank
+                '#5c5c5c'],
+        }
+    });
+
+    map.addLayer({
+        'id':'expenditureforelder',
+        'type':'fill',
+        'source':'expenditure',
+        'source-layer':'Expenditure-348lo0',
+        'paint':{
+            'fill-color': ['step',
+                            ['to-number', ['get', 'BigBorough_1인당 재난지원']],
+                            'white',
+                            2475,'#ffedde',
+                            5199, '#ffddbf',
+                            6958, '#ffd0a8', 
+                            10789, '#ffc594',
+                            15027, '#ffb678',
+                            23534, '#ffa75c',
+                            31252, '#ff9942',
+                            34247, '#ff8924',
+                        ],
+            'fill-opacity': 0.3,
+        }
+    });
+
+    map.addLayer({
         'id':'status',
         'type':'circle',
         'source':'centerstatus',
@@ -141,36 +187,6 @@ map.on('load',function(){
                 '#ccc'
             ],
             'fill-opacity': 1,
-        }
-    });
-
-    map.addLayer({
-        'id':'dongline',
-        'type':'line',
-        'source':'analysis',
-        'source-layer':'analysis-coolingcenter',
-        'paint':{
-            'line-color': '#000000',
-            'line-width': [
-                'interpolate', ['linear'], ['zoom'],
-                10, 0.2,
-                16, 1
-                ],
-        }
-    });
-
-    map.addLayer({
-        'id':'seoul',
-        'type':'line',
-        'source':'seoulboundary',
-        'source-layer':'seoul_boundary-960xnn',
-        'paint':{
-            'line-color': '#000000',
-            'line-width': [
-                'interpolate', ['linear'], ['zoom'],
-                5, 5,
-                16, 10
-                ],
         }
     });
 
@@ -251,7 +267,35 @@ map.on('load',function(){
         }
     });
     
+    map.addLayer({
+        'id':'dongline',
+        'type':'line',
+        'source':'analysis',
+        'source-layer':'analysis-coolingcenter',
+        'paint':{
+            'line-color': '#000000',
+            'line-width': [
+                'interpolate', ['linear'], ['zoom'],
+                10, 0.2,
+                16, 1
+                ],
+        }
+    });
 
+    map.addLayer({
+        'id':'seoul',
+        'type':'line',
+        'source':'seoulboundary',
+        'source-layer':'seoul_boundary-960xnn',
+        'paint':{
+            'line-color': '#000000',
+            'line-width': [
+                'interpolate', ['linear'], ['zoom'],
+                5, 5,
+                16, 10
+                ],
+        }
+    });
 
 
 });
