@@ -579,7 +579,7 @@ var config = {
             alignment: 'center',
             hidden: false,
             image: 'https://github.com/synnpower/countermapping2/blob/main/SeoulIsTooHot/images/%EB%AC%B4%EC%A0%9C-2_%EB%8C%80%EC%A7%80%201%20%EC%82%AC%EB%B3%B8%202_%EB%8C%80%EC%A7%80%201%20%EC%82%AC%EB%B3%B8%202.png?raw=true',
-            description: '',
+            description: 'Primarily, in the scrutiny of the suitability of Cooling Center siting, a pivotal consideration revolves around determining the optimal pedestrian distance that elderly individuals can traverse under conditions of extreme heat. For this, statistical data derived from prior scholarly investigations is utilized(Son and Kim 2013).',
             location: {
                 center: [126.822376, 37.55835],
                 zoom: 10.7,
