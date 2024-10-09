@@ -20,7 +20,7 @@ var config = {
             alignment: 'center',
             hidden: false,
             title: 'Seoul is hot. (Really)',
-            image: 'https://github.com/synnpower/countermapping2/blob/main/SeoulIsTooHot/images/seoulheat.jpg?raw=true',
+            image: 'https://github.com/Synn-Arch/Seoul-is-too-hot/blob/main/images/seoulheat.jpg?raw=true',
             description: 'The extreme heatwaves in South Korea were officially reclassified as a natural disaster via an amendment to the Disaster and Safety Management Basic Act on September 18, 2018 (Bae, Kim, and Lee 2020).  Among the susceptible demographic segments in South Korea, the elderly population aged 65 and above emerges as particularly vulnerable to heatwaves (Song 2013). In the year 2022, heat-related illness reports in South Korea revealed that 37.4% (585 individuals) of cases were in the age group of 60 or above, with Seoul recording 7% (110 individuals) of heat-related illness instances (Park et al. 2023).',
             location: {
                 center: [126.98376, 37.55835],
@@ -76,7 +76,7 @@ var config = {
             alignment: 'center',
             hidden: false,
             title: 'What is the cooling center?',
-            image: 'https://github.com/synnpower/countermapping2/blob/main/SeoulIsTooHot/images/coolingCenter.jpg?raw=true',
+            image: 'https://github.com/Synn-Arch/Seoul-is-too-hot/blob/main/images/coolingCenter.jpg?raw=true',
             description: 'Since 2018, a notable strategy employed to mitigate the impact of extreme heatwaves, which are categorized as natural disasters, entails the establishment of Cooling Centers. These facilities are delineated as designated locales instituted to provide shelter and support to populations susceptible to the adverse effects of severe heatwaves, including the elderly, individuals with restricted mobility, or those with underlying health vulnerabilities.',
             location: {
                 center: [126.98376, 37.55835],
@@ -132,7 +132,7 @@ var config = {
             alignment: 'left',
             hidden: false,
             title: 'Current Cooling Center Status in Seoul',
-            image: 'https://github.com/synnpower/countermapping2/blob/main/SeoulIsTooHot/images/FacilityCategories.jpg?raw=true',
+            image: 'https://github.com/Synn-Arch/Seoul-is-too-hot/blob/main/images/FacilityCategories.jpg?raw=true',
             description: 'As of the reference date of November 27, 2023, the municipality of Seoul, South Korea, hosted a cumulative count of 4,028 officially designated Cooling Centers. Of this aggregate, 3,162 establishments held the status of Senior Community Centers, while an additional 423 entities were categorized under the designation of Community Service Centers. ',
             location: {
                 center: [126.822376, 37.55835],
@@ -188,7 +188,7 @@ var config = {
             alignment: 'left',
             hidden: false,
             title: 'Insufficiency of Cooling Center capacity',
-            image: 'https://github.com/synnpower/countermapping2/blob/main/SeoulIsTooHot/images/coolingCenter2.jpg?raw=true',
+            image: 'https://github.com/Synn-Arch/Seoul-is-too-hot/blob/main/images/coolingCenter2.jpg?raw=true',
             description: 'The data underscores the insufficiency of Cooling Center capacity in relation to the vulnerable elderly population in numerous geographical zones. In particular, it is noteworthy that a total of 69 administrative districts, constituting 16% of the overall administrative districts, exhibited a ratio of vulnerable elderly population to total capacity that fell at or below 50%. ',
             location: {
                 center: [126.822376, 37.55835],
@@ -244,7 +244,7 @@ var config = {
             alignment: 'left',
             hidden: false,
             title: 'Number of Individuals Sharing One Air Conditioner',
-            image: 'https://github.com/synnpower/countermapping2/blob/main/SeoulIsTooHot/images/1_%EB%8C%80%EC%A7%80%201%20%EC%82%AC%EB%B3%B8%202.jpg?raw=true',
+            image: 'https://github.com/Synn-Arch/Seoul-is-too-hot/blob/main/images/1_%EB%8C%80%EC%A7%80%201%20%EC%82%AC%EB%B3%B8%202.jpg?raw=true',
             description: 'In 30 districts (equivalent to 7% of the sample), more than 46 elderly individuals were compelled to jointly utilize a solitary air conditioning unit. Although precise technical specifications regarding each air conditioner remain elusive, it is discernible that numerous districts grapple with limited accessibility to air conditioning facilities for individuals in need within the context of Cooling Centers.',
             location: {
                 center: [126.822376, 37.55835],
@@ -300,7 +300,7 @@ var config = {
             alignment: 'left',
             hidden: false,
             title: 'Occupancy Rate',
-            image: 'https://github.com/synnpower/countermapping2/blob/main/SeoulIsTooHot/images/SleepingCoolingCenter.jpeg?raw=true',
+            image: 'https://github.com/Synn-Arch/Seoul-is-too-hot/blob/main/images/SleepingCoolingCenter.jpeg?raw=true',
             description: 'A total of 164 administrative districts (comprising 38% of the sample) failed to secure any Cooling Centers with lodging capabilities, while 354 administrative districts (constituting 83% of the sample) exhibited accommodation capacities that fell below 50% concerning the elderly population.',
             location: {
                 center: [126.822376, 37.55835],
@@ -355,7 +355,7 @@ var config = {
             id: 'focus1',
             alignment: 'left',
             hidden: false,
-            image: 'https://github.com/synnpower/countermapping2/blob/main/SeoulIsTooHot/images/1_%EB%8C%80%EC%A7%80%201%20%EC%82%AC%EB%B3%B8.jpg?raw=true',
+            image: 'https://github.com/Synn-Arch/Seoul-is-too-hot/blob/main/images/1_%EB%8C%80%EC%A7%80%201%20%EC%82%AC%EB%B3%B8.jpg?raw=true',
             description: 'Utilizing the findings derived from the analysis presented in Chapter Three, I identified the five administrative districts characterized by the lowest Ratio of Facility Capacity to Low-Income Elderly Population. These districts exhibit occupancy rates spanning from 11% to 20%, with the overnight stay occupancy rate falling within the range of 0% to 18%. These findings underscore the inadequacy of Cooling Centers capacity and quantity in addressing the requirements of the vulnerable elderly population.',
             location: {
                 center: [126.822376, 37.55835],
@@ -411,7 +411,7 @@ var config = {
             alignment: 'center',
             hidden: false,
             title: 'By the way, why there are lack of Cooling Centers?',
-            image: 'https://github.com/synnpower/countermapping2/blob/main/SeoulIsTooHot/images/b3341835-12bb-49a2-bd48-e20bc7dcf7b7.jpg?raw=true',
+            image: 'https://github.com/Synn-Arch/Seoul-is-too-hot/blob/main/images/1_%EB%8C%80%EC%A7%80%201.jpg?raw=true',
             description: ' The majority of Cooling Centers are designated within Senior Community Centers, so excluding Senior Community Centers, the number of facilities used as Cooling Centers is very limited. ',
             location: {
                 center: [126.822376, 37.55835],
@@ -467,7 +467,7 @@ var config = {
             id: '1st reason',
             alignment: 'left',
             hidden: false,
-            image: 'https://github.com/synnpower/countermapping2/blob/main/SeoulIsTooHot/images/Feedback1.png?raw=true',
+            image: 'https://github.com/Synn-Arch/Seoul-is-too-hot/blob/main/images/1_%EB%8C%80%EC%A7%80%201%20%EC%82%AC%EB%B3%B8.jpg?raw=true',
             description: 'Since Cooling Centers in Seoul are temporary facilities designated within existing facilities, it is important to make good use of the existing infrastructure. But there is no guarantee that Senior Community Centers will be installed where vulnerable elderly populations reside in clusters. \n In the majority of the five designated target areas, when excluding Senior Community Centers, it becomes evident that there is an insufficient presence of significant Cooling Centers. This indicates the need to expand the category of facilities designated as Cooling Centers.',
             location: {
                 center: [126.822376, 37.55835],
@@ -523,7 +523,7 @@ var config = {
             alignment: 'center',
             hidden: false,
             title: 'We need more Cooling Center',
-            image: 'https://github.com/synnpower/countermapping2/blob/main/SeoulIsTooHot/images/IdontknowCoolingCenter.jpg?raw=true',
+            image: 'https://github.com/Synn-Arch/Seoul-is-too-hot/blob/main/images/IdontknowCoolingCenter.jpg?raw=true',
             description: '“I dont know about a cooling center, I am just sitting here because it gets hot after lunch.”',
             location: {
                 center: [126.822376, 37.55835],
@@ -578,7 +578,7 @@ var config = {
             id: 'elder',
             alignment: 'center',
             hidden: false,
-            image: 'https://github.com/synnpower/countermapping2/blob/main/SeoulIsTooHot/images/%EB%AC%B4%EC%A0%9C-2_%EB%8C%80%EC%A7%80%201%20%EC%82%AC%EB%B3%B8%202_%EB%8C%80%EC%A7%80%201%20%EC%82%AC%EB%B3%B8%202.png?raw=true',
+            image: 'https://github.com/Synn-Arch/Seoul-is-too-hot/blob/main/images/%EB%AC%B4%EC%A0%9C-2_%EB%8C%80%EC%A7%80%201%20%EC%82%AC%EB%B3%B8%202_%EB%8C%80%EC%A7%80%201%20%EC%82%AC%EB%B3%B8%202.png?raw=true',
             description: 'Primarily, in the scrutiny of the suitability of Cooling Center siting, a pivotal consideration revolves around determining the optimal pedestrian distance that elderly individuals can traverse under conditions of extreme heat. For this, statistical data derived from prior scholarly investigations is utilized(Son and Kim 2013).',
             location: {
                 center: [126.822376, 37.55835],
@@ -633,7 +633,7 @@ var config = {
             id: '7thchapter',
             alignment: 'left',
             hidden: false,
-            image: 'https://github.com/synnpower/countermapping2/blob/main/SeoulIsTooHot/images/1_%EB%8C%80%EC%A7%80%201%20%EC%82%AC%EB%B3%B8%203.jpg?raw=true',
+            image: 'https://github.com/Synn-Arch/Seoul-is-too-hot/blob/main/images/1_%EB%8C%80%EC%A7%80%201%20%EC%82%AC%EB%B3%B8%203.jpg?raw=true',
             location: {
                 center: [126.91920, 37.62382],
                 zoom: 14.52,
@@ -689,7 +689,7 @@ var config = {
             id: '8thchapter',
             alignment: 'left',
             hidden: false,
-            image: 'https://github.com/synnpower/countermapping2/blob/main/SeoulIsTooHot/images/1_%EB%8C%80%EC%A7%80%201%20%EC%82%AC%EB%B3%B8%204.jpg?raw=true',
+            image: 'https://github.com/Synn-Arch/Seoul-is-too-hot/blob/main/images/1_%EB%8C%80%EC%A7%80%201%20%EC%82%AC%EB%B3%B8%204.jpg?raw=true',
             location: {
                 center: [126.91920, 37.62382],
                 zoom: 14.52,
@@ -745,7 +745,7 @@ var config = {
             id: '10thchapter',
             alignment: 'left',
             hidden: false,
-            image: 'https://github.com/synnpower/countermapping2/blob/main/SeoulIsTooHot/images/1_%EB%8C%80%EC%A7%80%201%20%EC%82%AC%EB%B3%B8%205.jpg?raw=true',
+            image: 'https://github.com/Synn-Arch/Seoul-is-too-hot/blob/main/images/1_%EB%8C%80%EC%A7%80%201%20%EC%82%AC%EB%B3%B8%205.jpg?raw=true',
             location: {
                 center: [126.90323, 37.60522],
                 zoom: 14.52,
@@ -801,7 +801,7 @@ var config = {
             id: '11thchapter',
             alignment: 'left',
             hidden: false,
-            image: 'https://github.com/synnpower/countermapping2/blob/main/SeoulIsTooHot/images/1_%EB%8C%80%EC%A7%80%201%20%EC%82%AC%EB%B3%B8%206.jpg?raw=true',
+            image: 'https://github.com/Synn-Arch/Seoul-is-too-hot/blob/main/images/1_%EB%8C%80%EC%A7%80%201%20%EC%82%AC%EB%B3%B8%206.jpg?raw=true',
             location: {
                 center: [127.00985, 37.52562],
                 zoom: 14.52,
@@ -857,7 +857,7 @@ var config = {
             id: '12thchapter',
             alignment: 'left',
             hidden: false,
-            image: 'https://github.com/synnpower/countermapping2/blob/main/SeoulIsTooHot/images/1_%EB%8C%80%EC%A7%80%201%20%EC%82%AC%EB%B3%B8%207.jpg?raw=true',
+            image: 'https://github.com/Synn-Arch/Seoul-is-too-hot/blob/main/images/1_%EB%8C%80%EC%A7%80%201%20%EC%82%AC%EB%B3%B8%207.jpg?raw=true',
             location: {
                 center: [127.07211, 37.49659],
                 zoom: 14.52,
@@ -913,7 +913,7 @@ var config = {
             id: '13thchapter',
             alignment: 'left',
             hidden: false,
-            image: 'https://github.com/synnpower/countermapping2/blob/main/SeoulIsTooHot/images/1_%EB%8C%80%EC%A7%80%201%20%EC%82%AC%EB%B3%B8%208.jpg?raw=true',
+            image: 'https://github.com/Synn-Arch/Seoul-is-too-hot/blob/main/images/1_%EB%8C%80%EC%A7%80%201%20%EC%82%AC%EB%B3%B8%208.jpg?raw=true',
             location: {
                 center: [127.09191, 37.48582],
                 zoom: 14.52,
@@ -969,7 +969,7 @@ var config = {
             id: 'conclusion',
             alignment: 'center',
             hidden: false,
-            image: 'https://github.com/synnpower/countermapping2/blob/main/SeoulIsTooHot/images/s_%EB%8C%80%EC%A7%80%201%20%EC%82%AC%EB%B3%B8.png?raw=true',
+            image: 'https://github.com/Synn-Arch/Seoul-is-too-hot/blob/main/images/s_%EB%8C%80%EC%A7%80%201%20%EC%82%AC%EB%B3%B8.png?raw=true',
             location: {
                 center: [126.98376, 37.55835],
                 zoom: 10.7,
@@ -1023,7 +1023,7 @@ var config = {
             id: 'conclusion2',
             alignment: 'center',
             hidden: false,
-            image: 'https://github.com/synnpower/countermapping2/blob/main/SeoulIsTooHot/images/%EB%AC%B4%EC%A0%9C-2_%EB%8C%80%EC%A7%80%201.png?raw=true',
+            image: 'https://github.com/Synn-Arch/Seoul-is-too-hot/blob/main/images/%EB%AC%B4%EC%A0%9C-2_%EB%8C%80%EC%A7%80%201.png?raw=true',
             location: {
                 center: [126.98376, 37.55835],
                 zoom: 10.7,
